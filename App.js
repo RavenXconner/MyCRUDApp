@@ -1,5 +1,12 @@
 import React, { useState } from "react";
-import { StyleSheet, Text, View, FlatList, TextInput, TouchableOpacity } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  FlatList,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 import { Provider as PaperProvider, Button } from "react-native-paper";
 
 export default function App() {
@@ -14,7 +21,14 @@ export default function App() {
   // Create Product
   const addProduct = () => {
     if (productName && price) {
-      setProducts([...products, { id: Date.now().toString(), name: productName, price: parseFloat(price) }]);
+      setProducts([
+        ...products,
+        {
+          id: Date.now().toString(),
+          name: productName,
+          price: parseFloat(price),
+        },
+      ]);
       setProductName("");
       setPrice("");
     }
@@ -91,10 +105,16 @@ export default function App() {
           renderItem={({ item }) => (
             <View style={styles.product}>
               <Text>
-                {item.name} - ${item.price.toFixed(2)}
+                {item.name} - ₱{item.price.toFixed(2)}
               </Text>
               <View style={styles.actions}>
-                <Button onPress={() => { setEditingProduct(item); setProductName(item.name); setPrice(item.price.toString()); }}>
+                <Button
+                  onPress={() => {
+                    setEditingProduct(item);
+                    setProductName(item.name);
+                    setPrice(item.price.toString());
+                  }}
+                >
                   Edit
                 </Button>
                 <Button onPress={() => deleteProduct(item.id)}>Delete</Button>
@@ -109,14 +129,18 @@ export default function App() {
           data={cart}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
-            <Text>{item.name} - ${item.price.toFixed(2)}</Text>
+            <Text>
+              {item.name} - ₱{item.price.toFixed(2)}
+            </Text>
           )}
         />
-        <Text style={styles.total}>Total: ${total.toFixed(2)}</Text>
+        <Text style={styles.total}>Total: ₱{total.toFixed(2)}</Text>
         <Button mode="contained" onPress={processPayment}>
           Process Payment
         </Button>
-        {paymentSuccess && <Text style={styles.successMessage}>Payment was successful!</Text>}
+        {paymentSuccess && (
+          <Text style={styles.successMessage}>Payment was successful!</Text>
+        )}
       </View>
     </PaperProvider>
   );
@@ -125,8 +149,19 @@ export default function App() {
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 20, backgroundColor: "#fff" },
   title: { fontSize: 24, fontWeight: "bold", marginBottom: 20 },
-  input: { borderWidth: 1, borderColor: "#ccc", padding: 10, marginBottom: 10, borderRadius: 5 },
-  product: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: 10 },
+  input: {
+    borderWidth: 1,
+    borderColor: "#ccc",
+    padding: 10,
+    marginBottom: 10,
+    borderRadius: 5,
+  },
+  product: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 10,
+  },
   actions: { flexDirection: "row", gap: 10 },
   total: { fontSize: 18, fontWeight: "bold", marginTop: 20 },
   successMessage: { color: "green", marginTop: 10 },

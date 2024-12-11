@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "MyCRUDApp",
-    "slug": "MyCRUDApp",
+    "name": "RNGesus",
+    "slug": "RNGesus",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,10 +19,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ravenconner.RNGesus"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ec2b4749-48f5-440a-b122-9f48190f8949"
+      }
+    },
+    "owner": "ravenxconner"
   }
 }
