@@ -17,6 +17,7 @@ export default function App() {
   const [cart, setCart] = useState([]);
   const [total, setTotal] = useState(0);
   const [paymentSuccess, setPaymentSuccess] = useState(false);
+  const [message, setMessage] = useState("");
 
   // Create Product
   const addProduct = () => {
@@ -57,6 +58,8 @@ export default function App() {
   const addToCart = (product) => {
     setCart([...cart, product]);
     setTotal(total + product.price);
+    setMessage(`${product.name} has been added to the cart.`);
+    setTimeout(() => setMessage(""), 3000); // Clear message after 3 seconds
   };
 
   // Process Payment
@@ -66,6 +69,7 @@ export default function App() {
       setCart([]);
       setTotal(0);
       alert("Payment successful! Thank you for your purchase.");
+      setTimeout(() => setPaymentSuccess(false), 1500); // Remove success message after 1.5 seconds
     } else {
       alert("Your cart is empty.");
     }
@@ -124,7 +128,9 @@ export default function App() {
           )}
         />
 
+        <View style={styles.divider}></View>
         <Text style={styles.title}>Cart</Text>
+        {message ? <Text style={styles.message}>{message}</Text> : null}
         <FlatList
           data={cart}
           keyExtractor={(item, index) => index.toString()}
@@ -165,4 +171,10 @@ const styles = StyleSheet.create({
   actions: { flexDirection: "row", gap: 10 },
   total: { fontSize: 18, fontWeight: "bold", marginTop: 20 },
   successMessage: { color: "green", marginTop: 10 },
+  message: { fontSize: 16, color: "blue", marginVertical: 10 },
+  divider: {
+    borderBottomWidth: 1,
+    borderBottomColor: "#000",
+    marginVertical: 10,
+  },
 });

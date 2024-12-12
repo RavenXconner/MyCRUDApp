@@ -1,0 +1,15 @@
+Script for "SmartCart Manager" Pitching Video
+Member 1: (Introduction)
+"Hi, we’re Team RNGesus, and today, we’re proud to present our app, SmartCart Manager—an all-in-one solution for managing products, shopping carts, and payments with simplicity and efficiency."
+
+Member 2: (Features)
+"SmartCart Manager makes product management a breeze. With features like adding, updating, and deleting products, you have complete control over your inventory. Need to make changes on the go? This app has you covered."
+
+Member 3: (Cart Management)
+"The app also includes a robust cart system. You can add products to your cart with a single tap, and it dynamically updates the total price. No more guesswork when shopping!"
+
+Member 4: (Payments)
+"When it’s time to pay, SmartCart Manager streamlines the process with a one-click payment feature. Once payment is processed, the cart is cleared, and you’re ready for your next transaction."
+
+Member 5: (Closing)
+"Our app is built using React Native, making it lightweight and accessible on both Android and iOS. Whether you’re a small business owner or just need to manage personal shopping, SmartCart Manager is here to simplify your life. Thank you!"
