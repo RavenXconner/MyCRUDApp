@@ -1,15 +1,19 @@
-Script for "SmartCart Manager" Pitching Video
-Member 1: (Introduction)
-"Hi, we’re Team RNGesus, and today, we’re proud to present our app, SmartCart Manager—an all-in-one solution for managing products, shopping carts, and payments with simplicity and efficiency."
+Member Javy (Introduction):
+"Hello, everyone! We are Team RNGesus, composed of four passionate developers, and today we’re thrilled to introduce our app—SmartCart Manager. It's an all-in-one solution designed to simplify product management, shopping cart operations, and payments for businesses and personal use."
 
-Member 2: (Features)
-"SmartCart Manager makes product management a breeze. With features like adding, updating, and deleting products, you have complete control over your inventory. Need to make changes on the go? This app has you covered."
+Member Neil (Features Demo):
+"Let’s take a closer look at how SmartCart Manager works.
+First, we have product management. You can easily add new products by entering the product name and price, and then clicking ‘Add Product.’ For example, here, I’m adding a new item, ‘Wireless Mouse,’ priced at ₱500. Once I hit ‘Add Product,’ you’ll see it appear in our product list instantly.
+If you need to update a product, simply tap ‘Edit,’ make the necessary changes, and save it. Similarly, deleting products is just as quick with a single click. All these actions are reflected in real time, making inventory management hassle-free."
 
-Member 3: (Cart Management)
-"The app also includes a robust cart system. You can add products to your cart with a single tap, and it dynamically updates the total price. No more guesswork when shopping!"
+Member Ivy (Cart Management Demo):
+"Now, let’s move on to the cart system.
+In the app, adding items to your cart is simple. For example, I’m going to add the 'Wireless Mouse' we just created to the cart. With a single tap, it’s added, and you can immediately see the updated total price.
+You can continue shopping and adding items, and the total will keep adjusting automatically. This way, shoppers have full visibility over their purchases. Our cart system also provides feedback to the user, such as a notification confirming items have been added."
 
-Member 4: (Payments)
-"When it’s time to pay, SmartCart Manager streamlines the process with a one-click payment feature. Once payment is processed, the cart is cleared, and you’re ready for your next transaction."
+Member Ian (Payment Process Demo):
+"Once you’re ready to complete the purchase, the payment process is straightforward.
+Here, I’ll click ‘Process Payment,’ and the app will instantly handle the transaction. You’ll see a success message confirming that the payment has been processed. Afterward, the cart is cleared, and you're set for your next transaction. Whether you're using cash, card, or any other payment method, SmartCart Manager makes checkout smooth and fast."
 
-Member 5: (Closing)
-"Our app is built using React Native, making it lightweight and accessible on both Android and iOS. Whether you’re a small business owner or just need to manage personal shopping, SmartCart Manager is here to simplify your life. Thank you!"
+Member Javy (Outro):
+"SmartCart Manager is built using React Native, ensuring it's fast and available on both Android and iOS. Whether you run a small business or need an app for personal shopping, SmartCart Manager helps you stay organized and efficient. Thank you for considering our solution!"
